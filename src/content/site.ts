@@ -50,6 +50,5 @@ export const rooms = [
 ]
 
 export const contact = {
-  email: 'hello@quantedge.ai',
-  place: 'Lucknow, Uttar Pradesh',
+  email: 'info@thequantedge.ai',
 }

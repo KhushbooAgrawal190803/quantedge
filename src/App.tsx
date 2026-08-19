@@ -63,8 +63,7 @@ export default function App() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/45 to-ink/25" />
         <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-6 pb-16 pt-28 md:pb-24">
-          <p className="text-[13px] tracking-[0.18em] text-white/70">LUCKNOW</p>
-          <h1 className="mt-4 max-w-[11ch] font-display text-5xl leading-[0.95] font-extrabold text-white md:text-7xl">
+          <h1 className="max-w-[11ch] font-display text-5xl leading-[0.95] font-extrabold text-white md:text-7xl">
             Learn it. Then build with it.
           </h1>
           <p className="mt-6 max-w-md font-serif text-lg leading-relaxed text-white/80 md:text-xl">
@@ -96,7 +95,7 @@ export default function App() {
             are left with a chatbot and a prayer.
           </p>
           <p>
-            We built a centre in Lucknow so a technician, a diploma student, or a two-person
+            We built a centre so a technician, a diploma student, or a two-person
             hardware team can walk in, use a robot, train a small vision model, and leave with
             something that works in their world.
           </p>
@@ -182,7 +181,6 @@ export default function App() {
             <a href={`mailto:${contact.email}`} className="font-display text-2xl font-bold text-clay md:text-3xl">
               {contact.email}
             </a>
-            <p className="mt-3 text-white/55">{contact.place}</p>
           </div>
         </div>
       </section>
