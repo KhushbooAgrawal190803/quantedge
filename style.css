@@ -292,6 +292,54 @@ section.dark .eyebrow{color:#c8b4ed}
 .sent h3{font:600 clamp(28px,3.5vw,40px)/1.08 'Space Grotesk',sans-serif;letter-spacing:-.05em;margin:14px 0 10px}
 .sent p{font-size:17px;margin:0;overflow-wrap:anywhere}
 
+
+/* ---------- Careers ---------- */
+.hiring{display:inline-flex;align-items:center;gap:12px;margin-top:6px;border:1.5px solid var(--ink);border-radius:99px;padding:10px 20px 10px 14px;background:#fff;font-size:14px;font-weight:700;letter-spacing:.02em}
+.hiring i{flex:none;width:10px;height:10px;border-radius:50%;background:#3fa56a;display:block;box-shadow:0 0 0 0 #3fa56a88;animation:ping 1.8s ease-out infinite}
+@keyframes ping{70%{box-shadow:0 0 0 10px #3fa56a00}100%{box-shadow:0 0 0 0 #3fa56a00}}
+.facts-wrap{padding-top:56px;padding-bottom:56px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.facts>div{padding:26px 22px 28px;border-right:1px solid var(--ink);display:grid;gap:8px}
+.facts>div:first-child{padding-left:0}
+.facts>div:last-child{border-right:0}
+.facts b{font:600 clamp(21px,2.1vw,27px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.04em}
+.facts small{font-size:14px;opacity:.7}
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,32px);margin-top:50px;align-items:start}
+.job{border:1px solid var(--ink);padding:28px;display:flex;flex-direction:column;gap:16px;transition:box-shadow .35s,translate .35s}
+.job:hover{box-shadow:12px 12px 0 #2021391c;translate:0 -3px}
+.job:nth-child(2){margin-top:44px}
+.job:nth-child(3){margin-top:18px}
+.jobtop{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.jobtags{display:flex;gap:6px;flex-wrap:wrap}
+.jobtags span{font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--ink);border-radius:99px;padding:4px 9px;background:#ffffffaa}
+.job h3{font:600 clamp(26px,2.5vw,34px)/1.05 'Space Grotesk',sans-serif;letter-spacing:-.055em;margin:6px 0 0}
+.jobabout{font-size:17px;line-height:1.55;margin:0}
+.jobflag{display:flex;gap:10px;align-items:center;margin:0;font-weight:700;font-size:15px}
+.jobflag i{flex:none;width:9px;height:9px;border-radius:50%;background:var(--ink);display:block}
+.jobmore{border-top:1px solid var(--ink)}
+.jobmore summary{list-style:none;cursor:pointer;padding:16px 0 4px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center}
+.jobmore summary::-webkit-details-marker{display:none}
+.jobmore summary:after{content:"+";font:500 22px/1 'Space Grotesk',sans-serif;transition:rotate .3s}
+.jobmore[open] summary:after{rotate:45deg}
+.jobmore .close,.jobmore[open] .open{display:none}
+.jobmore[open] .close{display:inline}
+.jobbody{padding:6px 0 4px;animation:rise .35s ease-out}
+@keyframes rise{from{opacity:0;translate:0 -6px}}
+.jobbody h4{font:600 18px 'Space Grotesk',sans-serif;letter-spacing:-.02em;margin:18px 0 8px}
+.jobbody ul{margin:0;padding-left:18px}
+.jobbody li{font-size:15px;line-height:1.55;margin:6px 0}
+.jobbody p{font-size:15px;line-height:1.55;margin:0}
+.jobbody .jobnote{margin-top:16px;padding:12px 14px;border:1px dashed var(--ink);background:#ffffff99;font-size:14px}
+.applysec{background:#f0ede7}
+.jobapply{margin:4px 0 0;padding-top:14px;border-top:1px solid var(--ink);font-size:15px;font-weight:600}
+.jobapply a,.maillink{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px;overflow-wrap:anywhere}
+.jobapply a:hover,.maillink:hover{color:#7a64b0}
+.job.flash{animation:flash 1.2s ease-out}
+@keyframes flash{30%{box-shadow:0 0 0 6px var(--lilac)}}
+@media(max-width:1180px){.links{gap:22px}}
+.links a{white-space:nowrap}
+@media(min-width:851px) and (max-width:1000px){.nav{gap:14px}.logo{font-size:24px}.links{gap:14px;font-size:14px}.navcta{padding:9px 14px}}
+
 /* ---------- Reveal ---------- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
 .reveal.visible{opacity:1;transform:none}
@@ -323,6 +371,13 @@ section.dark .eyebrow{color:#c8b4ed}
   .diagram{flex-direction:column}
   .diagram>div,.diagram>div:nth-child(2){transform:none;min-height:0}
   .contactgrid{grid-template-columns:1fr}
+  .jobs{grid-template-columns:1fr;max-width:620px}
+  .job:nth-child(n){margin-top:0}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts>div{padding:20px 14px 22px}
+  .facts>div:nth-child(odd){padding-left:0}
+  .facts>div:nth-child(2){border-right:0}
+  .facts>div:nth-child(-n+2){border-bottom:1px solid var(--ink)}
   .pagehero{min-height:0}
   .pagehero p{max-width:none}
   .pagehero .heroart{position:relative;right:auto;top:auto;translate:none;width:min(280px,78%);margin-top:40px}
@@ -360,6 +415,8 @@ section.dark .eyebrow{color:#c8b4ed}
   .pagehero .heroart{width:min(340px,100%)}
   .stage:has(.ring){min-height:400px}
   .contactgrid a{padding:24px}
+  .job{padding:22px}
+  .hiring{font-size:13px;padding:9px 16px 9px 12px}
   .mockbody{padding:20px}
   .sent{padding:24px}
   .hero h1,.pagehero h1,.pagehero.art h1{font-size:clamp(50px,13.5vw,80px)}

@@ -9,6 +9,7 @@ export default {
   'Education systems': 'Bildungssysteme',
   'The Foundry': 'Die Foundry',
   'About': 'Über uns',
+  'Careers': 'Karriere',
   "Let's connect": 'Kontakt aufnehmen',
   'Open navigation': 'Navigation öffnen',
   'Menu ☰': 'Menü ☰',

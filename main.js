@@ -332,3 +332,10 @@ if (ask) {
       .catch((e) => { console.error(e); fail() })
   })
 }
+
+// ---------- Careers: a link like careers.html#creative-learning-designer opens and highlights that role ----------
+const jobTarget = location.hash && document.getElementById(location.hash.slice(1))
+if (jobTarget && jobTarget.classList.contains('job')) {
+  jobTarget.querySelector('details').open = true
+  jobTarget.classList.add('flash')
+}
