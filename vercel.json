@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/learning", "destination": "/learning.html" },
+    { "source": "/education", "destination": "/education.html" },
+    { "source": "/foundry", "destination": "/foundry.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/connect", "destination": "/connect.html" },
+    { "source": "/careers", "destination": "/careers.html" }
+  ]
+}
